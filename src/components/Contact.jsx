@@ -14,8 +14,7 @@ export default function Contact() {
                 >
                     <h2 className="text-3xl font-bold mb-6">Led by Pros.</h2>
                     <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                        Our events are curated by Ben Zeltzer & Team. We don't just teach volleyball; we engineer
-                        <span className="text-[#FD5E53] font-bold"> social dynamics</span> that improve employee retention and team culture.
+                        Curated by a <span className="text-[#FD5E53] font-bold">US College League athlete</span> and <span className="text-[#FD5E53] font-bold">Sports Therapy expert</span>. We ensure safety, professional standards, and <span className="text-[#FD5E53] font-bold">social dynamics</span> that improve team culture.
                     </p>
                     <div className="flex gap-4">
                         {/* Placeholder for social proof images */}

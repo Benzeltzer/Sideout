@@ -101,7 +101,7 @@ export default function Pricing() {
                             <div className="relative z-20 flex flex-col flex-grow">
                                 {pkg.highlight && (
                                     <div className="absolute -top-4  left-1/2 transform -translate-x-1/2 bg-sunset text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
-                                        Best Value
+                                        Recommended
                                     </div>
                                 )}
 

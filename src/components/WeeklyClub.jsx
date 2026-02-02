@@ -22,6 +22,8 @@ export default function WeeklyClub() {
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
+                        whileHover={{ scale: 1.02 }}
+                        transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
                     >
                         <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sunset to-orange-500 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg mb-6">

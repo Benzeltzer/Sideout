@@ -7,6 +7,8 @@ import Contact from './components/Contact';
 import Testimonials from './components/Testimonials';
 import Team from './components/Team';
 import FAB from './components/FAB';
+import TrustedBy from './components/TrustedBy';
+import FAQ from './components/FAQ';
 import WeeklyClub from './components/WeeklyClub';
 
 function App() {
@@ -28,7 +30,8 @@ function App() {
       <Experience />
       <Team />
       <Pricing />
-      <WeeklyClub />
+      <FAQ />
+      <Testimonials />
       <Testimonials />
       <Contact />
       <FAB />
