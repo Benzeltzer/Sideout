@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Volleyball, Trophy, GlassWater, UtensilsCrossed, Music, Camera, Shirt, Users, Video, Crown, Check } from 'lucide-react';
+import { Volleyball, Trophy, GlassWater, UtensilsCrossed, Music, Camera, Shirt, Users, Video, Crown, Check, Beer } from 'lucide-react';
 
 const packages = [
     {
@@ -7,45 +7,48 @@ const packages = [
         tagline: "Perfect for a high-energy team refresh.",
         price: "Basic",
         features: [
-            { icon: <Volleyball className="w-5 h-5 text-ocean" />, text: "Pro Beach Volleyball Clinic" },
-            { icon: <Trophy className="w-5 h-5 text-ocean" />, text: "Mini-Tournament (Round Robin)" },
-            { icon: <GlassWater className="w-5 h-5 text-ocean" />, text: "Unlimited Hydration & Fruit" },
+            { icon: <Volleyball className="w-5 h-5 text-ocean" />, text: "Pro Volleyball Training" },
+            { icon: <Trophy className="w-5 h-5 text-ocean" />, text: "Friendly Tournament" },
+            { icon: <Beer className="w-5 h-5 text-ocean" />, text: "Energy Drinks, Beers & Snacks" },
+            { icon: <Music className="w-5 h-5 text-ocean" />, text: "Chill Beach Music Playlist" },
         ],
         cta: "Get Started",
         highlight: false,
         color: "ocean",
-        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I'm%20interested%20in%20the%20Basic%20Sandy%20Start%20package."
+        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I'm%20interested%20in%20The%20Sandy%20Start%20(Basic)%20package%20for%20our%20team."
     },
     {
         name: "The Coastal Comp",
         tagline: "Elevate your team spirit with a full-day experience.",
         price: "Premium",
         features: [
-            { icon: <Check className="w-5 h-5 text-sunset" />, text: "Everything in Basic" },
-            { icon: <UtensilsCrossed className="w-5 h-5 text-sunset" />, text: "Gourmet Beach Lunch (Bowls/BBQ)" },
-            { icon: <Music className="w-5 h-5 text-sunset" />, text: "DJ or Curated Playlist" },
-            { icon: <Camera className="w-5 h-5 text-sunset" />, text: "Digital Memory Pack (Photos)" },
+            { icon: <Volleyball className="w-5 h-5 text-sunset" />, text: "Pro Volleyball Training" },
+            { icon: <Trophy className="w-5 h-5 text-sunset" />, text: "Managed Tournament" },
+            { icon: <UtensilsCrossed className="w-5 h-5 text-sunset" />, text: "Fresh Fruits, Sweet Treats & Premium Sandwiches" },
+            { icon: <Beer className="w-5 h-5 text-sunset" />, text: "Cold Soft Drinks & Beers" },
+            { icon: <Camera className="w-5 h-5 text-sunset" />, text: "Action Photo Pack (High-res shots)" },
         ],
         cta: "Elevate Your Team",
         highlight: false,
         color: "sunset",
-        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I'd%20love%20to%20hear%20more%20details%20about%20the%20Premium%20Coastal%20Comp%20package."
+        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I'd%20love%20to%20get%20more%20details%20about%20The%20Coastal%20Comp%20(Premium)%20package."
     },
     {
         name: "The Ultimate SideOut Experience",
         tagline: "The gold standard of corporate bonding.",
         price: "VIP",
         features: [
-            { icon: <Check className="w-5 h-5 text-white" />, text: "Everything in Premium" },
-            { icon: <Shirt className="w-5 h-5 text-white" />, text: "Custom Merch (Sand Socks/Tees)" },
-            { icon: <Users className="w-5 h-5 text-white" />, text: "Exclusive Bonding Workshop" },
-            { icon: <Video className="w-5 h-5 text-white" />, text: "Drone Cinematography & Reel" },
-            { icon: <Crown className="w-5 h-5 text-white" />, text: "Winners' Podium & Prizes" },
+            { icon: <Check className="w-5 h-5 text-white" />, text: "Elite Pro Coaching" },
+            { icon: <Trophy className="w-5 h-5 text-white" />, text: "Professional Tournament with Referee" },
+            { icon: <UtensilsCrossed className="w-5 h-5 text-white" />, text: "Full Catering & Premium Bar (Open)" },
+            { icon: <Shirt className="w-5 h-5 text-white" />, text: "Exclusive Company Merchandise (Sand Socks/Tees)" },
+            { icon: <Video className="w-5 h-5 text-white" />, text: "Professional Photographer & Drone Footage" },
+            { icon: <Crown className="w-5 h-5 text-white" />, text: "Premium Prizes for Tournament Winners" },
         ],
         cta: "Book the Ultimate Experience",
         highlight: true,
         color: "gold",
-        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I%20want%20to%20go%20all%20out.%20Please%20send%20me%20info%20about%20the%20VIP%20Ultimate%20Experience."
+        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I%20want%20the%20VIP%20Ultimate%20SideOut%20Experience.%20Let's%20make%20it%20unforgettable!"
     }
 ];
 
