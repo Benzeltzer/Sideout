@@ -31,7 +31,7 @@ const packages = [
         cta: "Elevate Your Team",
         highlight: false,
         color: "sunset",
-        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I%20saw%20the%20SideOut%20website%20and%20would%20love%20to%20chat."
+        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I'd%20love%20to%20get%20more%20details%20about%20The%20Coastal%20Comp%20(Premium)%20package."
     },
     {
         name: "The Ultimate SideOut Experience",
