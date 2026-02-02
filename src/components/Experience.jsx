@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import { GlassWater, Dumbbell, Trophy, Sunset } from 'lucide-react';
 
 const timeline = [
-    { time: "17:00", title: "Reception & Drinks", desc: "Kick off with chilled beers, wine, and great music.", icon: <GlassWater /> },
-    { time: "17:30", title: "Light Warm-up", desc: "Fun ice-breakers and movement to get the energy flowing.", icon: <Dumbbell /> },
-    { time: "18:00", title: "Friendly Tournament", desc: "Strategic teams, low-stakes games, high-fives everywhere.", icon: <Trophy /> },
-    { time: "19:30", title: "Sunset Toast", desc: "Celebrate the winners and the sunset with a final cheer.", icon: <Sunset /> }
+    { title: "Reception & Drinks", desc: "Kick off with chilled beers, wine, and great music.", icon: <GlassWater /> },
+    { title: "Light Warm-up", desc: "Fun ice-breakers and movement to get the energy flowing.", icon: <Dumbbell /> },
+    { title: "Friendly Tournament", desc: "Strategic teams, low-stakes games, high-fives everywhere.", icon: <Trophy /> },
+    { title: "Sunset Toast", desc: "Celebrate the winners and the sunset with a final cheer.", icon: <Sunset /> }
 ];
 
 export default function Experience() {
@@ -60,7 +60,7 @@ function TimelineItem({ item, index }) {
                     whileHover={{ scale: 1.02 }}
                     className="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all border-l-4 border-sunset"
                 >
-                    <span className="text-sunset font-bold text-lg block mb-2">{item.time}</span>
+
                     <h3 className="text-2xl font-bold text-ocean mb-2">{item.title}</h3>
                     <p className="text-gray-600 leading-relaxed">{item.desc}</p>
                 </motion.div>
