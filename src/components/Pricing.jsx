@@ -71,7 +71,7 @@ export default function Pricing() {
                     </p>
                 </motion.div>
 
-                <div className="grid md:grid-cols-3 gap-8 items-start">
+                <div className="grid md:grid-cols-3 gap-8 items-stretch">
                     {packages.map((pkg, index) => (
                         <motion.div
                             key={index}
@@ -95,14 +95,14 @@ export default function Pricing() {
                                 </div>
                             )}
 
-                            <div className="relative z-20">
+                            <div className="relative z-20 flex flex-col flex-grow">
                                 {pkg.highlight && (
                                     <div className="absolute -top-4  left-1/2 transform -translate-x-1/2 bg-sunset text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
                                         Best Value
                                     </div>
                                 )}
 
-                                <div className="mb-0 mt-2 flex-grow">
+                                <div className="mb-0 mt-2">
                                     <h3 className={`text-2xl font-bold mb-2 ${pkg.highlight ? 'text-white' : 'text-ocean'}`}>
                                         {pkg.name}
                                     </h3>
@@ -125,7 +125,7 @@ export default function Pricing() {
                                 </div>
 
                             </div>
-                            <div className="mt-auto z-20 w-full">
+                            <div className="mt-auto pt-8 w-full z-20">
                                 <a
                                     href={pkg.whatsappLink}
                                     target="_blank"
@@ -149,6 +149,6 @@ export default function Pricing() {
                     ))}
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

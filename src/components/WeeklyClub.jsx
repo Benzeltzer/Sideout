@@ -25,14 +25,14 @@ export default function WeeklyClub() {
                         viewport={{ once: true }}
                     >
                         <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sunset to-orange-500 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg mb-6">
-                            SideOut Weekly
+                            Weekly Wellness
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                            Beyond the Event: <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-sunset">Weekly Team Excellence</span>
+                            Make Beach Volleyball <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-sunset">Your Weekly Ritual</span>
                         </h2>
                         <p className="text-blue-100 text-lg mb-8 leading-relaxed max-w-xl">
-                            Turn team bonding into a lifestyle. Boost morale, health, and productivity with a permanent beach volleyball slot for your company.
+                            Why stop at one event? Boost your team's morale and health with a recurring weekly training slot. We handle the coaching, the court, and the vibes.
                         </p>
 
                         <div className="grid gap-6 mb-10">
@@ -66,14 +66,14 @@ export default function WeeklyClub() {
                         </div>
 
                         <motion.a
-                            href="https://wa.me/972545909636?text=Hi%20Ben!%20I'm%20interested%20in%20setting%20up%20a%20regular%20weekly%20training%20program%20for%20our%20company."
+                            href="https://wa.me/972545909636?text=Hi%20Ben!%20I'm%20interested%20in%20starting%20a%20regular%20weekly%20training%20tradition%20for%20our%20company.%20Could%20you%20send%20over%20some%20details?"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="inline-flex items-center gap-2 bg-white text-blue-900 hover:bg-blue-50 font-bold py-4 px-8 rounded-xl shadow-xl transition-colors"
                         >
-                            Get a Quote for Weekly Training
+                            Inquire About Weekly Training
                             <ArrowRight className="w-5 h-5" />
                         </motion.a>
                     </motion.div>
