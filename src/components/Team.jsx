@@ -5,7 +5,7 @@ const coaches = [
     {
         name: "Ben Zeltzer",
         title: "Founder & Head Coach",
-        image: "/ben-action.jpg",
+        image: "/ben-celebration.jpg",
         bio: "With 9 years of coaching experience, Ben brings elite-level expertise to the sand. A former U.S. College League player, he reached the Semi-Finals of the Israeli National Championship. Ben combines his professional background as a Beach Volleyball coach and his current studies in Sports Therapy to create a training environment that is high-energy, technical, and safe.",
         badges: [
             { text: "9+ Years Exp", icon: <Clock className="w-4 h-4" /> },
