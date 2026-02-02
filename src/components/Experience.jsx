@@ -31,10 +31,10 @@ export default function Experience() {
                         {timeline.map((item, index) => (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-100px" }}
+                                transition={{ duration: 0.6, ease: "easeOut" }}
                                 className={`flex flex-col md:flex-row items-center gap-8 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
                             >
                                 <div className="flex-1 w-full text-center md:text-left">

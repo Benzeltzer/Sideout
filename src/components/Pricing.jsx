@@ -109,7 +109,7 @@ export default function Pricing() {
                                     <h3 className={`text-2xl font-bold mb-2 ${pkg.highlight ? 'text-white' : 'text-ocean'}`}>
                                         {pkg.name}
                                     </h3>
-                                    <p className={`text-sm ${pkg.highlight ? 'text-gray-200' : 'text-gray-500'}`}>
+                                    <p className={`text-sm ${pkg.highlight ? 'text-white' : 'text-gray-500'}`}>
                                         {pkg.tagline}
                                     </p>
                                 </div>
@@ -120,7 +120,7 @@ export default function Pricing() {
                                             <div className={`mt-0.5 ${pkg.highlight ? 'text-white' : 'text-ocean'}`}>
                                                 {feature.icon}
                                             </div>
-                                            <span className={`text-sm font-medium ${pkg.highlight ? 'text-white opacity-100' : 'text-gray-600'}`}>
+                                            <span className={`text-sm font-medium ${pkg.highlight ? 'text-white' : 'text-gray-600'}`}>
                                                 {feature.text}
                                             </span>
                                         </div>
