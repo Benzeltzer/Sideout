@@ -22,7 +22,7 @@ const stats = [
 
 export default function Impact() {
     return (
-        <section className="py-20 bg-white relative">
+        <section className="py-20 bg-ocean relative z-10 border-t border-white/5">
             <div className="max-w-7xl mx-auto px-4">
 
                 <div className="grid md:grid-cols-3 gap-8">
@@ -33,14 +33,14 @@ export default function Impact() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
-                            className="bg-gray-50 p-8 rounded-2xl flex items-center gap-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+                            className="bg-slate/50 p-8 rounded-2xl flex items-center gap-6 shadow-sm hover:shadow-cyan/5 transition-all border border-white/5 backdrop-blur-sm"
                         >
-                            <div className="p-4 bg-white rounded-xl shadow-sm">
+                            <div className="p-4 bg-white/5 rounded-xl text-white">
                                 {stat.icon}
                             </div>
                             <div>
-                                <h3 className="text-4xl font-bold text-gray-900">{stat.value}</h3>
-                                <p className="text-gray-500 font-medium uppercase tracking-wider text-sm mt-1">{stat.label}</p>
+                                <h3 className="text-4xl font-bold text-white">{stat.value}</h3>
+                                <p className="text-blue-100 opacity-60 font-medium uppercase tracking-wider text-sm mt-1">{stat.label}</p>
                                 {stat.sub && <p className="text-sm text-sunset font-bold">{stat.sub}</p>}
                             </div>
                         </motion.div>

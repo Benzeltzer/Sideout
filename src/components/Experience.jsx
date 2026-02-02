@@ -11,61 +11,54 @@ const timeline = [
 
 export default function Experience() {
     return (
-        <section className="py-24 bg-gray-50 relative">
-            <div className="max-w-6xl mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-ocean mb-4">The Experience</h2>
-                    <p className="text-lg text-gray-500">A seamless flow from arrival to sunset.</p>
-                </div>
+        <section className="py-24 bg-ocean relative overflow-hidden">
+            <div className="max-w-7xl mx-auto px-4 relative z-10">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="text-center mb-20"
+                >
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">The SideOut Flow</h2>
+                    <p className="text-light opacity-80 text-lg">A perfectly curated schedule for maximum engagement.</p>
+                </motion.div>
 
-                <div className="relative space-y-24">
-                    {/* Connecting Line */}
-                    <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-ocean/20 via-sunset to-ocean/20 hidden md:block" />
+                <div className="relative">
+                    {/* Vertical Line */}
+                    <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-sunset via-orange-300 to-transparent opacity-20 hidden md:block" />
 
-                    {timeline.map((item, index) => (
-                        <TimelineItem key={index} item={item} index={index} />
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
-}
+                    <div className="space-y-12">
+                        {timeline.map((item, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                className={`flex flex-col md:flex-row items-center gap-8 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
+                            >
+                                <div className="flex-1 w-full text-center md:text-left">
+                                    <div className={`p-6 bg-slate/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-sunset/50 transition-all duration-300 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
+                                        <div className={`inline-block p-3 rounded-full bg-sunset/10 text-sunset mb-4 md:hidden`}>
+                                            {item.icon}
+                                        </div>
+                                        <h3 className="text-2xl font-bold text-white mb-2">{item.title}</h3>
+                                        <p className="text-light opacity-70">{item.desc}</p>
+                                    </div>
+                                </div>
 
-function TimelineItem({ item, index }) {
-    const isEvent = index % 2 === 0;
+                                <div className="relative z-10 hidden md:flex items-center justify-center w-12 h-12 bg-ocean border-4 border-sunset rounded-full shadow-lg shadow-sunset/20">
+                                    <div className="text-sunset transform scale-75">
+                                        {item.icon}
+                                    </div>
+                                </div>
 
-    return (
-        <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-            className={`flex flex-col md:flex-row items-center gap-8 ${isEvent ? 'md:flex-row-reverse' : ''}`}
-        >
-            <div className="w-full md:w-1/2 flex justify-start md:justify-center">
-                <div className="hidden md:block w-32" /> {/* Spacer */}
-            </div>
-
-            {/* Icon Marker */}
-            <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center">
-                <div className="w-12 h-12 rounded-full bg-white border-4 border-sunset shadow-lg flex items-center justify-center z-10">
-                    <div className="text-ocean">
-                        {item.icon}
+                                <div className="flex-1 hidden md:block" />
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </div>
-
-            {/* Card */}
-            <div className={`w-full md:w-1/2 pl-20 md:pl-0 ${isEvent ? 'md:text-right md:pr-12' : 'md:pl-12'}`}>
-                <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all border-l-4 border-sunset"
-                >
-
-                    <h3 className="text-2xl font-bold text-ocean mb-2">{item.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{item.desc}</p>
-                </motion.div>
-            </div>
-        </motion.div>
+        </section>
     );
 }

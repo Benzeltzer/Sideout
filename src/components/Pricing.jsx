@@ -54,7 +54,7 @@ const packages = [
 
 export default function Pricing() {
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="py-24 bg-ocean relative overflow-hidden">
             {/* Background Decorative Elements */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-sand/40 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2" />
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-ocean/10 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2" />
@@ -66,10 +66,10 @@ export default function Pricing() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-ocean mb-4 tracking-tight">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
                         Corporate Team Building
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto font-light">
+                    <p className="text-light text-lg max-w-2xl mx-auto font-light opacity-80">
                         Sun, Sand, and Success. Choose the perfect package for your team.
                     </p>
                 </motion.div>
@@ -84,10 +84,10 @@ export default function Pricing() {
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             whileHover={{ y: -10, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" }}
                             className={`
-                            relative flex flex-col p-8 rounded-2xl transition-all duration-300 overflow-hidden h-full
+                            relative flex flex-col p-8 rounded-2xl transition-all duration-300 overflow-hidden h-full border border-white/10 backdrop-blur-sm
                             ${pkg.highlight
-                                    ? 'bg-ocean text-white z-10'
-                                    : 'bg-gray-50 text-gray-800 border border-gray-100'}
+                                    ? 'bg-slate/90 shadow-2xl shadow-cyan/10'
+                                    : 'bg-slate/50 hover:bg-slate/70'}
                         `}
                         >
                             {/* Animated Border for VIP */}
@@ -100,16 +100,16 @@ export default function Pricing() {
 
                             <div className="relative z-20 flex flex-col flex-grow">
                                 {pkg.highlight && (
-                                    <div className="absolute -top-4  left-1/2 transform -translate-x-1/2 bg-sunset text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
+                                    <div className="absolute -top-4  left-1/2 transform -translate-x-1/2 bg-cyan text-ocean text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
                                         Recommended
                                     </div>
                                 )}
 
                                 <div className="mb-0 mt-2">
-                                    <h3 className={`text-2xl font-bold mb-2 ${pkg.highlight ? 'text-white' : 'text-ocean'}`}>
+                                    <h3 className={`text-2xl font-bold mb-2 text-white`}>
                                         {pkg.name}
                                     </h3>
-                                    <p className={`text-sm ${pkg.highlight ? 'text-blue-100' : 'text-gray-500'}`}>
+                                    <p className={`text-sm text-blue-100 opacity-70`}>
                                         {pkg.tagline}
                                     </p>
                                 </div>
@@ -117,10 +117,10 @@ export default function Pricing() {
                                 <div className="my-8 space-y-4 flex-grow">
                                     {pkg.features.map((feature, i) => (
                                         <div key={i} className="flex items-start gap-3">
-                                            <div className={`mt-0.5 ${pkg.highlight ? 'text-white' : 'text-ocean'}`}>
+                                            <div className={`mt-0.5 ${pkg.highlight ? 'text-cyan' : 'text-sunset'}`}>
                                                 {feature.icon}
                                             </div>
-                                            <span className={`text-sm font-medium ${pkg.highlight ? 'text-gray-100' : 'text-gray-600'}`}>
+                                            <span className={`text-sm font-medium text-gray-100`}>
                                                 {feature.text}
                                             </span>
                                         </div>
@@ -136,8 +136,8 @@ export default function Pricing() {
                                     className={`
                                 flex items-center justify-center w-full py-4 px-6 rounded-xl font-bold transition-all duration-300
                                 ${pkg.highlight
-                                            ? 'bg-sunset text-white hover:bg-[#e04f44] shadow-lg'
-                                            : 'bg-white text-ocean border-2 border-ocean hover:bg-ocean hover:text-white'}
+                                            ? 'bg-cyan text-ocean hover:bg-[#4CD9B8] shadow-lg shadow-cyan/20'
+                                            : 'bg-transparent text-white border-2 border-white/20 hover:border-cyan hover:text-cyan'}
                             `}>
                                     {pkg.cta}
                                 </a>

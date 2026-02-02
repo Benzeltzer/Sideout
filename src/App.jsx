@@ -13,7 +13,7 @@ import WeeklyClub from './components/WeeklyClub';
 
 function App() {
   return (
-    <div className="font-sans antialiased text-gray-900 bg-gray-50 selection:bg-[#FD5E53] selection:text-white">
+    <div className="font-sans antialiased text-light bg-ocean selection:bg-cyan selection:text-ocean">
       {/* Fixed Logo */}
       <div className="fixed top-6 left-6 z-50">
         <img

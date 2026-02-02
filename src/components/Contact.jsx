@@ -3,7 +3,7 @@ import { Mail, Phone, Instagram } from 'lucide-react';
 
 export default function Contact() {
     return (
-        <footer className="bg-[#0F4C75] text-white py-20">
+        <footer className="bg-ocean text-white py-20 border-t border-white/10">
             <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
 
                 {/* Social Proof / Methodology */}
