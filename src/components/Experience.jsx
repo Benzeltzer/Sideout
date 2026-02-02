@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
-import { GlassWater, Dumbbell, Trophy, Sunset } from 'lucide-react';
+import { GlassWater, Dumbbell, Trophy, Sunset, Volleyball } from 'lucide-react';
 
 const timeline = [
     { title: "Reception & Drinks", desc: "Kick off with chilled beers, wine, and great music.", icon: <GlassWater /> },
     { title: "Light Warm-up", desc: "Fun ice-breakers and movement to get the energy flowing.", icon: <Dumbbell /> },
+    { title: "Beach Volleyball Practice", desc: "Learn the fundamentals from the pros with guided drills.", icon: <Volleyball /> },
     { title: "Friendly Tournament", desc: "Strategic teams, low-stakes games, high-fives everywhere.", icon: <Trophy /> },
     { title: "Sunset Toast", desc: "Celebrate the winners and the sunset with a final cheer.", icon: <Sunset /> }
 ];
