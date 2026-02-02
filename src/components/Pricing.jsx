@@ -41,7 +41,7 @@ const packages = [
             { icon: <Check className="w-5 h-5 text-white" />, text: "Elite Pro Coaching" },
             { icon: <Trophy className="w-5 h-5 text-white" />, text: "Professional Tournament with Referee" },
             { icon: <UtensilsCrossed className="w-5 h-5 text-white" />, text: "Full Catering & Premium Bar (Open)" },
-            { icon: <Shirt className="w-5 h-5 text-white" />, text: "Exclusive Company Merchandise (Sand Socks/Tees)" },
+            { icon: <Shirt className="w-5 h-5 text-white" />, text: "Exclusive Company Merchandise" },
             { icon: <Video className="w-5 h-5 text-white" />, text: "Professional Photographer & Drone Footage" },
             { icon: <Crown className="w-5 h-5 text-white" />, text: "Premium Prizes for Tournament Winners" },
         ],
