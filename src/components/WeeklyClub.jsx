@@ -23,8 +23,8 @@ export default function WeeklyClub() {
                             SideOut Weekly
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-gray-900">
-                            Beyond the Event: <br />
-                            <span className="text-ocean">Weekly Team Excellence.</span>
+                            SideOut Weekly: <br />
+                            <span className="text-ocean">The Ultimate Employee Wellness Club</span>
                         </h2>
                         <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-xl">
                             Turn team bonding into a lifestyle. Boost morale, health, and productivity with a permanent beach volleyball slot for your company.
@@ -61,14 +61,14 @@ export default function WeeklyClub() {
                         </div>
 
                         <motion.a
-                            href="https://wa.me/972545909636?text=Hi%20Ben!%20I'm%20interested%20in%20setting%20up%20a%20regular%20weekly%20training%20program%20for%20our%20company."
+                            href="https://wa.me/972545909636?text=Hi%20Ben!%20I'm%20interested%20in%20starting%20a%20regular%20weekly%20training%20tradition%20for%20our%20company."
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="inline-flex items-center gap-2 bg-ocean text-white hover:bg-[#0b3a59] font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all"
                         >
-                            Get a Quote for Weekly Training
+                            Inquire About Weekly Training
                             <ArrowRight className="w-5 h-5" />
                         </motion.a>
                     </motion.div>
