@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react';
 export default function FAB() {
     return (
         <motion.a
-            href="https://wa.me/972545909636?text=Hi%20Ben!%20I%20saw%20your%20website%20and%20would%20love%20to%20chat%20about%20your%20beach%20volleyball%20services."
+            href="https://wa.me/972545909636?text=Hi%20Ben!%20I%20saw%20the%20SideOut%20website%20and%20would%20love%20to%20chat."
             target="_blank"
             rel="noopener noreferrer"
             initial={{ scale: 0 }}
