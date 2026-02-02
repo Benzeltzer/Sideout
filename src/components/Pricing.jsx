@@ -121,14 +121,18 @@ export default function Pricing() {
                                     ))}
                                 </div>
 
-                                <button className={`
-                                w-full py-4 px-6 rounded-xl font-bold transition-all duration-300
+                                <a
+                                    href="https://wa.me/972545909636?text=Hi%20Ben!%20I%20saw%20the%20SideOut%20website%20and%20would%20love%20to%20hear%20more%20about%20your%20beach%20volleyball%20events%20for%20our%20team."
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`
+                                flex items-center justify-center w-full py-4 px-6 rounded-xl font-bold transition-all duration-300
                                 ${pkg.highlight
-                                        ? 'bg-sunset text-white hover:bg-[#e04f44] shadow-lg'
-                                        : 'bg-white text-ocean border-2 border-ocean hover:bg-ocean hover:text-white'}
+                                            ? 'bg-sunset text-white hover:bg-[#e04f44] shadow-lg'
+                                            : 'bg-white text-ocean border-2 border-ocean hover:bg-ocean hover:text-white'}
                             `}>
                                     {pkg.cta}
-                                </button>
+                                </a>
 
                                 <div className="mt-4 text-center">
                                     <button className={`text-xs underline underline-offset-4 ${pkg.highlight ? 'text-blue-200 hover:text-white' : 'text-gray-400 hover:text-ocean'}`}>

@@ -42,7 +42,7 @@ export default function Hero() {
           </p>
 
           <motion.a
-            href="https://wa.me/972500000000"
+            href="https://wa.me/972545909636?text=Hi%20Ben!%20I%20saw%20the%20SideOut%20website%20and%20would%20love%20to%20hear%20more%20about%20your%20beach%20volleyball%20events%20for%20our%20team."
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.9 }}

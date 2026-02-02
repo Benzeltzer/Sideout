@@ -19,8 +19,8 @@ export default function Contact() {
                     </p>
                     <div className="flex gap-4">
                         {/* Placeholder for social proof images */}
-                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold">BZ</div>
-                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold">T1</div>
+                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold cursor-help" title="Ben Zeltzer">BZ</div>
+                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold cursor-help" title="Suf Amitai">SA</div>
                     </div>
                 </motion.div>
 
@@ -35,7 +35,7 @@ export default function Contact() {
                     <ul className="space-y-4">
                         <li className="flex items-center gap-4 text-lg hover:text-[#FD5E53] transition-colors cursor-pointer">
                             <Phone className="w-6 h-6" />
-                            <span>+972-50-000-0000</span>
+                            <span>054-590-9636</span>
                         </li>
                         <li className="flex items-center gap-4 text-lg hover:text-[#FD5E53] transition-colors cursor-pointer">
                             <Mail className="w-6 h-6" />
@@ -46,9 +46,14 @@ export default function Contact() {
                             <span>@sideout</span>
                         </li>
                     </ul>
-                    <button className="w-full mt-8 bg-[#FD5E53] hover:bg-[#e04f44] text-white font-bold py-3 rounded-lg transition-colors">
+                    <a
+                        href="https://wa.me/972545909636?text=Hi%20Ben!%20I%20saw%20the%20SideOut%20website%20and%20would%20love%20to%20hear%20more%20about%20your%20beach%20volleyball%20events%20for%20our%20team."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block w-full mt-8 bg-[#FD5E53] hover:bg-[#e04f44] text-white font-bold py-3 rounded-lg transition-colors text-center"
+                    >
                         Contact Us
-                    </button>
+                    </a>
                 </motion.div>
 
             </div>
