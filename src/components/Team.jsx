@@ -30,7 +30,7 @@ const coaches = [
 
 export default function Team() {
     return (
-        <section className="py-24 bg-gray-50 overflow-hidden">
+        <section className="py-24 bg-white overflow-hidden">
             <div className="max-w-6xl mx-auto px-4">
 
                 <motion.div

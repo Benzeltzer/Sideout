@@ -26,7 +26,7 @@ const companies = ["Wix", "Monday.com", "Fiverr", "Mobileye", "Check Point"];
 
 export default function Testimonials() {
     return (
-        <section className="py-24 bg-gray-50 text-gray-900 relative overflow-hidden text-center">
+        <section className="py-24 bg-white text-gray-900 relative overflow-hidden text-center">
             <div className="max-w-7xl mx-auto px-4">
 
                 {/* Trusted By Marquee */}

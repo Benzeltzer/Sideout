@@ -86,7 +86,7 @@ export default function Pricing() {
                             className={`
                             relative flex flex-col p-8 rounded-2xl transition-all duration-300 overflow-hidden h-full
                             ${pkg.highlight
-                                    ? 'bg-white text-gray-900 border-2 border-sunset shadow-xl z-10'
+                                    ? 'bg-ocean text-white border-2 border-sunset shadow-xl z-10'
                                     : 'bg-white text-gray-800 border border-gray-100 hover:shadow-lg'}
                         `}
                         >
@@ -106,10 +106,10 @@ export default function Pricing() {
                                 )}
 
                                 <div className="mb-0 mt-2">
-                                    <h3 className={`text-2xl font-bold mb-2 ${pkg.highlight ? 'text-ocean' : 'text-ocean'}`}>
+                                    <h3 className={`text-2xl font-bold mb-2 ${pkg.highlight ? 'text-white' : 'text-ocean'}`}>
                                         {pkg.name}
                                     </h3>
-                                    <p className={`text-sm ${pkg.highlight ? 'text-gray-500' : 'text-gray-500'}`}>
+                                    <p className={`text-sm ${pkg.highlight ? 'text-gray-200' : 'text-gray-500'}`}>
                                         {pkg.tagline}
                                     </p>
                                 </div>
@@ -117,10 +117,10 @@ export default function Pricing() {
                                 <div className="my-8 space-y-4 flex-grow">
                                     {pkg.features.map((feature, i) => (
                                         <div key={i} className="flex items-start gap-3">
-                                            <div className={`mt-0.5 ${pkg.highlight ? 'text-ocean' : 'text-ocean'}`}>
+                                            <div className={`mt-0.5 ${pkg.highlight ? 'text-white' : 'text-ocean'}`}>
                                                 {feature.icon}
                                             </div>
-                                            <span className={`text-sm font-medium ${pkg.highlight ? 'text-gray-600' : 'text-gray-600'}`}>
+                                            <span className={`text-sm font-medium ${pkg.highlight ? 'text-white opacity-100' : 'text-gray-600'}`}>
                                                 {feature.text}
                                             </span>
                                         </div>
@@ -143,7 +143,7 @@ export default function Pricing() {
                                 </a>
 
                                 <div className="mt-4 text-center">
-                                    <button className={`text-xs underline underline-offset-4 ${pkg.highlight ? 'text-blue-200 hover:text-white' : 'text-gray-400 hover:text-ocean'}`}>
+                                    <button className={`text-xs underline underline-offset-4 ${pkg.highlight ? 'text-white hover:text-white' : 'text-gray-400 hover:text-ocean'}`}>
                                         Compare Features
                                     </button>
                                 </div>

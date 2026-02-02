@@ -11,7 +11,7 @@ const timeline = [
 
 export default function Experience() {
     return (
-        <section className="py-24 bg-gray-50 relative overflow-hidden">
+        <section className="py-24 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
