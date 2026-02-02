@@ -3,44 +3,37 @@ import { Calendar, HeartPulse, ShieldCheck, ArrowRight } from 'lucide-react';
 
 export default function WeeklyClub() {
     return (
-        <section className="relative py-24 overflow-hidden">
-            {/* Background Image with Overlay */}
-            <div className="absolute inset-0 z-0">
-                <img
-                    src="https://images.unsplash.com/photo-1628151016629-8a8b09339e1a?q=80&w=2000&auto=format&fit=crop"
-                    alt="Team High Five"
-                    className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-blue-900/80 mix-blend-multiply" />
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-blue-900/90 to-transparent" />
-            </div>
+        <section className="relative py-24 overflow-hidden bg-blue-50">
+            {/* Background Decorative Elements */}
+            <div className="absolute top-0 right-0 w-96 h-96 bg-sand/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-ocean/5 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2" />
 
-            <div className="max-w-6xl mx-auto px-4 relative z-10 text-white">
+            <div className="max-w-7xl mx-auto px-4 relative z-10">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
 
                     {/* Content */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        whileHover={{ scale: 1.02 }}
+                        whileHover={{ scale: 1.01 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
                     >
-                        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sunset to-orange-500 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg mb-6">
-                            Weekly Wellness
+                        <div className="inline-flex items-center gap-2 bg-ocean/10 text-ocean text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6">
+                            SideOut Weekly
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                            Make Beach Volleyball <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-sunset">Your Weekly Ritual</span>
+                        <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-gray-900">
+                            Beyond the Event: <br />
+                            <span className="text-ocean">Weekly Team Excellence.</span>
                         </h2>
-                        <p className="text-blue-100 text-lg mb-8 leading-relaxed max-w-xl">
-                            Why stop at one event? Boost your team's morale and health with a recurring weekly training slot. We handle the coaching, the court, and the vibes.
+                        <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-xl">
+                            Turn team bonding into a lifestyle. Boost morale, health, and productivity with a permanent beach volleyball slot for your company.
                         </p>
 
                         <div className="grid gap-6 mb-10">
                             {[
                                 {
-                                    icon: <Calendar className="w-6 h-6 text-yellow-400" />,
+                                    icon: <Calendar className="w-6 h-6 text-ocean" />,
                                     title: "Consistency",
                                     desc: "A fixed weekly slot at your preferred beach."
                                 },
@@ -50,40 +43,57 @@ export default function WeeklyClub() {
                                     desc: "The best way to de-stress and stay active under the sun."
                                 },
                                 {
-                                    icon: <ShieldCheck className="w-6 h-6 text-green-400" />,
+                                    icon: <ShieldCheck className="w-6 h-6 text-ocean" />,
                                     title: "Low Friction",
                                     desc: "We handle everything—equipment, professional coaching, and court reservations."
                                 }
                             ].map((item, i) => (
                                 <div key={i} className="flex gap-4 items-start">
-                                    <div className="mt-1 bg-white/10 p-2 rounded-lg backdrop-blur-sm">
+                                    <div className="mt-1 bg-white p-2 rounded-lg shadow-sm border border-gray-100">
                                         {item.icon}
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-xl text-white">{item.title}</h3>
-                                        <p className="text-blue-200 text-sm">{item.desc}</p>
+                                        <h3 className="font-bold text-xl text-gray-900">{item.title}</h3>
+                                        <p className="text-gray-500 text-sm">{item.desc}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
 
                         <motion.a
-                            href="https://wa.me/972545909636?text=Hi%20Ben!%20I'm%20interested%20in%20starting%20a%20regular%20weekly%20training%20tradition%20for%20our%20company."
+                            href="https://wa.me/972545909636?text=Hi%20Ben!%20I'm%20interested%20in%20setting%20up%20a%20regular%20weekly%20training%20program%20for%20our%20company."
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="inline-flex items-center gap-2 bg-white text-blue-900 hover:bg-blue-50 font-bold py-4 px-8 rounded-xl shadow-xl transition-colors"
+                            className="inline-flex items-center gap-2 bg-ocean text-white hover:bg-[#0b3a59] font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all"
                         >
-                            Inquire About Weekly Training
+                            Get a Quote for Weekly Training
                             <ArrowRight className="w-5 h-5" />
                         </motion.a>
                     </motion.div>
 
-                    {/* Decorative / Image Side (Optional, or just spacer since bg is image) */}
-                    <div className="hidden md:block">
-                        {/* Could be an illustration or simply empty to let background show */}
-                    </div>
+                    {/* Image Side */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        className="relative hidden md:block"
+                    >
+                        <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                            <img
+                                src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=2000&auto=format&fit=crop"
+                                alt="Team Weekly Training"
+                                className="w-full h-[600px] object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                            <div className="absolute bottom-8 left-8 text-white">
+                                <p className="font-bold text-xl">The Ultimate Employee Wellness Club</p>
+                                <p className="text-sm opacity-90">Join leading companies on the sand</p>
+                            </div>
+                        </div>
+                    </motion.div>
 
                 </div>
             </div>
