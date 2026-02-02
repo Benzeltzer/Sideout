@@ -30,6 +30,7 @@ function App() {
       <Experience />
       <Team />
       <Pricing />
+      <WeeklyClub />
       <FAQ />
       <TrustedBy />
       <Testimonials />
