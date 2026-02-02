@@ -47,7 +47,7 @@ export default function Contact() {
                         </li>
                     </ul>
                     <a
-                        href="https://wa.me/972545909636?text=Hi%20Ben!%20I%20saw%20the%20SideOut%20website%20and%20would%20love%20to%20hear%20more%20about%20your%20beach%20volleyball%20events%20for%20our%20team."
+                        href="https://wa.me/972545909636?text=Hi%20Ben!%20I%20saw%20the%20SideOut%20website%20and%20would%20love%20to%20chat%20about%20an%20event."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block w-full mt-8 bg-[#FD5E53] hover:bg-[#e04f44] text-white font-bold py-3 rounded-lg transition-colors text-center"

@@ -13,7 +13,8 @@ const packages = [
         ],
         cta: "Get Started",
         highlight: false,
-        color: "ocean"
+        color: "ocean",
+        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I'm%20interested%20in%20the%20Basic%20Sandy%20Start%20package%20for%20my%20team."
     },
     {
         name: "The Coastal Comp",
@@ -27,7 +28,8 @@ const packages = [
         ],
         cta: "Elevate Your Team",
         highlight: false,
-        color: "sunset"
+        color: "sunset",
+        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I'd%20love%20to%20hear%20more%20details%20about%20the%20Premium%20Coastal%20Comp%20package."
     },
     {
         name: "The Ultimate SideOut Experience",
@@ -42,7 +44,8 @@ const packages = [
         ],
         cta: "Book the Ultimate Experience",
         highlight: true,
-        color: "gold"
+        color: "gold",
+        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I%20want%20to%20go%20all%20out.%20Please%20send%20me%20info%20about%20the%20VIP%20Ultimate%20Experience%20package."
     }
 ];
 
@@ -122,7 +125,7 @@ export default function Pricing() {
                                 </div>
 
                                 <a
-                                    href="https://wa.me/972545909636?text=Hi%20Ben!%20I%20saw%20the%20SideOut%20website%20and%20would%20love%20to%20hear%20more%20about%20your%20beach%20volleyball%20events%20for%20our%20team."
+                                    href={pkg.whatsappLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={`
