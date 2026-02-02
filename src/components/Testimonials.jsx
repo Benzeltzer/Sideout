@@ -26,7 +26,7 @@ const companies = ["Wix", "Monday.com", "Fiverr", "Mobileye", "Check Point"];
 
 export default function Testimonials() {
     return (
-        <section className="py-24 bg-ocean text-white relative overflow-hidden border-t border-white/5">
+        <section className="py-24 bg-gray-50 text-gray-900 relative overflow-hidden text-center">
             <div className="max-w-7xl mx-auto px-4">
 
                 {/* Trusted By Marquee */}
@@ -40,15 +40,15 @@ export default function Testimonials() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.2 }}
-                            className="bg-white/5 p-8 rounded-2xl backdrop-blur-sm border border-white/10 relative"
+                            className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative text-left"
                         >
-                            <Quote className="absolute top-8 right-8 text-white/10 w-12 h-12" />
-                            <p className="text-lg text-gray-200 mb-8 leading-relaxed relative z-10">"{t.quote}"</p>
+                            <Quote className="absolute top-8 right-8 text-ocean/10 w-12 h-12" />
+                            <p className="text-lg text-gray-600 mb-8 leading-relaxed relative z-10">"{t.quote}"</p>
                             <div className="flex items-center gap-4">
                                 <img src={t.image} alt={t.name} className="w-12 h-12 rounded-full object-cover border-2 border-sunset" />
                                 <div>
-                                    <h4 className="font-bold text-white">{t.name}</h4>
-                                    <p className="text-sm text-gray-400">{t.role}</p>
+                                    <h4 className="font-bold text-ocean">{t.name}</h4>
+                                    <p className="text-sm text-gray-500">{t.role}</p>
                                 </div>
                             </div>
                         </motion.div>

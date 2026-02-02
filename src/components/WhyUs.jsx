@@ -21,7 +21,7 @@ const features = [
 
 export default function WhyUs() {
     return (
-        <section className="py-20 bg-ocean relative">
+        <section className="py-20 bg-[#F5F5DC]/30">
             <div className="max-w-7xl mx-auto px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -29,8 +29,8 @@ export default function WhyUs() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl font-bold text-white mb-4">Why Sideout?</h2>
-                    <p className="text-xl text-blue-100 opacity-70 max-w-2xl mx-auto">We redefine corporate events by focusing on connection rather than competition.</p>
+                    <h2 className="text-4xl font-bold text-[#0F4C75] mb-4">Why Sideout?</h2>
+                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">We redefine corporate events by focusing on connection rather than competition.</p>
                 </motion.div>
 
                 <div className="grid md:grid-cols-3 gap-8">
@@ -41,11 +41,11 @@ export default function WhyUs() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
-                            className="bg-slate/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center border-b-4 border-sunset backdrop-blur-sm"
+                            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center border-b-4 border-[#0F4C75]"
                         >
-                            <div className="mb-6 flex justify-center transform scale-110">{feature.icon}</div>
-                            <h3 className="text-2xl font-bold mb-3 text-white">{feature.title}</h3>
-                            <p className="text-light opacity-70 leading-relaxed">{feature.description}</p>
+                            <div className="mb-6 flex justify-center">{feature.icon}</div>
+                            <h3 className="text-2xl font-bold mb-3 text-gray-800">{feature.title}</h3>
+                            <p className="text-gray-600 leading-relaxed">{feature.description}</p>
                         </motion.div>
                     ))}
                 </div>

@@ -7,13 +7,14 @@ export default {
     theme: {
         extend: {
             colors: {
-                ocean: '#0A192F', // Deep Navy (Background)
-                navy: '#0A192F',
-                slate: '#112240', // Card Background
-                light: '#E6F1FF', // Off-white text
-                sand: '#F5F5DC', // Keeping for legacy, maybe remove later
-                sunset: '#FF6B6B', // Tweaked vibrant orange
-                cyan: '#64FFDA', // Electric Cyan
+                ocean: '#0F4C75',
+                sand: '#F5F5DC',
+                sunset: '#FD5E53',
+                // Keeping these for safety but they shouldn't be primary anymore
+                navy: '#0F4C75',
+                slate: '#F8F9FA',
+                light: '#1a202c',
+                cyan: '#FD5E53',
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],

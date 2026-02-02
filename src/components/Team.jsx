@@ -30,7 +30,7 @@ const coaches = [
 
 export default function Team() {
     return (
-        <section className="py-24 bg-ocean overflow-hidden">
+        <section className="py-24 bg-gray-50 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4">
 
                 <motion.div
@@ -39,7 +39,7 @@ export default function Team() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-white uppercase tracking-tight">
+                    <h2 className="text-4xl md:text-5xl font-bold text-ocean uppercase tracking-tight">
                         The Pros Behind the Game
                     </h2>
                     <div className="h-1 w-24 bg-sunset mx-auto mt-6 rounded-full" />
@@ -54,7 +54,7 @@ export default function Team() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
                             whileHover={{ y: -10 }}
-                            className="bg-slate rounded-3xl shadow-xl overflow-hidden group border border-white/5 relative"
+                            className="bg-white rounded-3xl shadow-xl overflow-hidden group border border-gray-100 relative"
                         >
                             {/* Image Section with Zoom Effect */}
                             <div className="h-80 overflow-hidden relative">
@@ -71,18 +71,18 @@ export default function Team() {
                             </div>
 
                             {/* Content Section */}
-                            <div className="p-8 relative bg-slate">
+                            <div className="p-8 relative bg-white">
                                 {/* Badges */}
                                 <div className="flex flex-wrap gap-3 mb-6">
                                     {coach.badges.map((badge, i) => (
-                                        <span key={i} className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
+                                        <span key={i} className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-ocean text-xs font-bold uppercase tracking-wider">
                                             {badge.icon}
                                             {badge.text}
                                         </span>
                                     ))}
                                 </div>
 
-                                <p className="text-light opacity-80 leading-relaxed text-lg">
+                                <p className="text-gray-600 leading-relaxed text-lg">
                                     {coach.bio}
                                 </p>
                             </div>

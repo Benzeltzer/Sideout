@@ -11,8 +11,8 @@ export default function WeeklyClub() {
                     alt="Team High Five"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-slate/80 mix-blend-multiply" />
-                <div className="absolute inset-0 bg-gradient-to-r from-slate via-slate/90 to-transparent" />
+                <div className="absolute inset-0 bg-blue-900/80 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-blue-900/90 to-transparent" />
             </div>
 
             <div className="max-w-6xl mx-auto px-4 relative z-10 text-white">

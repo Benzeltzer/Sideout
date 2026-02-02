@@ -23,11 +23,11 @@ const faqs = [
 
 export default function FAQ() {
     return (
-        <section className="py-24 bg-ocean relative z-10">
+        <section className="py-24 bg-gray-50">
             <div className="max-w-3xl mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-white mb-4">Common Questions</h2>
-                    <p className="text-light opacity-70 text-lg">Everything you need to know before hitting the sand.</p>
+                    <h2 className="text-4xl font-bold text-ocean mb-4">Common Questions</h2>
+                    <p className="text-gray-500 text-lg">Everything you need to know before hitting the sand.</p>
                 </div>
 
                 <div className="space-y-4">
@@ -46,13 +46,13 @@ function FAQItem({ faq }) {
     return (
         <motion.div
             initial={false}
-            className="bg-slate/50 rounded-xl shadow-lg border border-white/5 overflow-hidden backdrop-blur-sm"
+            className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden"
         >
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
             >
-                <span className="font-bold text-white text-lg">{faq.question}</span>
+                <span className="font-bold text-ocean text-lg">{faq.question}</span>
                 <ChevronDown className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
             </button>
             <motion.div
@@ -61,7 +61,7 @@ function FAQItem({ faq }) {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden"
             >
-                <div className="p-6 pt-0 text-light opacity-80 leading-relaxed">
+                <div className="p-6 pt-0 text-gray-600 leading-relaxed">
                     {faq.answer}
                 </div>
             </motion.div>

@@ -18,7 +18,7 @@ export default function Hero() {
           <source src="https://assets.mixkit.co/videos/preview/mixkit-group-of-friends-playing-volleyball-on-the-beach-1209-large.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/30 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ocean/90 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0F4C75]/80 via-transparent to-transparent" />
       </div>
 
       {/* Content with Glassmorphism */}

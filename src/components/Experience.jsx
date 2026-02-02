@@ -11,7 +11,7 @@ const timeline = [
 
 export default function Experience() {
     return (
-        <section className="py-24 bg-ocean relative overflow-hidden">
+        <section className="py-24 bg-gray-50 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -19,8 +19,8 @@ export default function Experience() {
                     viewport={{ once: true }}
                     className="text-center mb-20"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">The SideOut Flow</h2>
-                    <p className="text-light opacity-80 text-lg">A perfectly curated schedule for maximum engagement.</p>
+                    <h2 className="text-4xl md:text-5xl font-bold text-ocean mb-4">The SideOut Flow</h2>
+                    <p className="text-gray-500 text-lg">A perfectly curated schedule for maximum engagement.</p>
                 </motion.div>
 
                 <div className="relative">
@@ -38,16 +38,16 @@ export default function Experience() {
                                 className={`flex flex-col md:flex-row items-center gap-8 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
                             >
                                 <div className="flex-1 w-full text-center md:text-left">
-                                    <div className={`p-6 bg-slate/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-sunset/50 transition-all duration-300 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
-                                        <div className={`inline-block p-3 rounded-full bg-sunset/10 text-sunset mb-4 md:hidden`}>
+                                    <div className={`p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
+                                        <div className={`inline-block p-3 rounded-full bg-orange-100 text-sunset mb-4 md:hidden`}>
                                             {item.icon}
                                         </div>
-                                        <h3 className="text-2xl font-bold text-white mb-2">{item.title}</h3>
-                                        <p className="text-light opacity-70">{item.desc}</p>
+                                        <h3 className="text-2xl font-bold text-ocean mb-2">{item.title}</h3>
+                                        <p className="text-gray-600">{item.desc}</p>
                                     </div>
                                 </div>
 
-                                <div className="relative z-10 hidden md:flex items-center justify-center w-12 h-12 bg-ocean border-4 border-sunset rounded-full shadow-lg shadow-sunset/20">
+                                <div className="relative z-10 hidden md:flex items-center justify-center w-12 h-12 bg-white border-4 border-sunset rounded-full shadow-lg">
                                     <div className="text-sunset transform scale-75">
                                         {item.icon}
                                     </div>
