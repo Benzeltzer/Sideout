@@ -32,7 +32,7 @@ function App() {
       <Pricing />
       <FAQ />
       <Testimonials />
-      <Testimonials />
+
       <Contact />
       <FAB />
     </div>
