@@ -30,14 +30,7 @@ export default function Testimonials() {
             <div className="max-w-7xl mx-auto px-4">
 
                 {/* Trusted By Marquee */}
-                <div className="text-center mb-20 opacity-60">
-                    <p className="text-sm uppercase tracking-widest mb-8">Trusted by Industry Leaders</p>
-                    <div className="flex justify-center gap-12 flex-wrap grayscale opacity-70">
-                        {companies.map((company, i) => (
-                            <span key={i} className="text-2xl font-bold font-mono">{company}</span>
-                        ))}
-                    </div>
-                </div>
+
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {testimonials.map((t, i) => (

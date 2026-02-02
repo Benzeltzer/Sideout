@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const companies = [1, 2, 3, 4, 5, 6];
+const companies = ["Wix", "Monday.com", "Fiverr", "Mobileye", "Check Point"];
 
 export default function TrustedBy() {
     return (
@@ -9,15 +9,11 @@ export default function TrustedBy() {
                 <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-8">
                     Trusted by innovative teams across Tel Aviv
                 </p>
-                <div className="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-                    {/* Placeholder Logos */}
-                    {companies.map((_, i) => (
-                        <motion.div
-                            key={i}
-                            whileHover={{ scale: 1.1, opacity: 1 }}
-                            className="h-8 w-24 bg-gray-300 rounded-md animate-pulse"
-                            title="Company Logo"
-                        />
+                <div className="flex justify-center gap-12 flex-wrap opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                    {companies.map((company, i) => (
+                        <span key={i} className="text-2xl font-bold font-mono text-gray-400 hover:text-ocean transition-colors cursor-default">
+                            {company}
+                        </span>
                     ))}
                 </div>
             </div>
