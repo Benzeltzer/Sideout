@@ -1,21 +1,35 @@
 import { motion } from 'framer-motion';
 
-const companies = ["Wix", "Monday.com", "Fiverr", "Mobileye", "Check Point"];
+const companies = [
+    { name: "Wix", color: "hover:text-black" },
+    { name: "Monday.com", color: "hover:text-[#F33142]" }, // Monday red-ish
+    { name: "Fiverr", color: "hover:text-[#1DBF73]" }, // Fiverr green
+    { name: "Mobileye", color: "hover:text-[#EF2A31]" }, // Mobileye red
+    { name: "Check Point", color: "hover:text-[#EB356D]" } // Checkpoint pink-ish
+];
 
 export default function TrustedBy() {
     return (
-        <section className="py-16 bg-white border-b border-gray-100">
+        <section className="py-20 bg-white border-b border-gray-100">
             <div className="max-w-6xl mx-auto px-4 text-center">
-                <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-8">
-                    Trusted by innovative teams across Tel Aviv
-                </p>
-                <div className="flex justify-center gap-12 flex-wrap opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                <h3 className="text-2xl font-bold mb-4 text-ocean">
+                    Trusted by Leading Companies & Partners
+                </h3>
+
+                <div className="flex justify-center gap-12 flex-wrap items-center opacity-60 grayscale hover:grayscale-0 transition-all duration-500 my-10">
                     {companies.map((company, i) => (
-                        <span key={i} className="text-2xl font-bold font-mono text-gray-400 hover:text-ocean transition-colors cursor-default">
-                            {company}
+                        <span
+                            key={i}
+                            className={`text-3xl font-black font-sans text-gray-400 transition-colors duration-300 cursor-default ${company.color}`}
+                        >
+                            {company.name}
                         </span>
                     ))}
                 </div>
+
+                <p className="text-gray-500 font-medium tracking-wide">
+                    Join the ranks of teams that have elevated their spirit with SideOut.
+                </p>
             </div>
         </section>
     );

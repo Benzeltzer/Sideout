@@ -31,6 +31,7 @@ function App() {
       <Team />
       <Pricing />
       <FAQ />
+      <TrustedBy />
       <Testimonials />
 
       <Contact />
