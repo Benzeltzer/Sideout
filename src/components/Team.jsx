@@ -5,7 +5,7 @@ const coaches = [
     {
         name: "Ben Zeltzer",
         title: "Founder & Head Coach",
-        image: "/ben-action-new.jpg",
+        image: "/ben-action.jpg",
         bio: "With 9 years of coaching experience, Ben brings elite-level expertise to the sand. A former U.S. College League player, he reached the Semi-Finals of the Israeli National Championship. Ben combines his professional background as a Beach Volleyball coach and his current studies in Sports Therapy to create a training environment that is high-energy, technical, and safe.",
         badges: [
             { text: "9+ Years Exp", icon: <Clock className="w-4 h-4" /> },
@@ -49,10 +49,10 @@ export default function Team() {
                     {coaches.map((coach, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.2 }}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.5 }}
                             whileHover={{ y: -10 }}
                             className="bg-white rounded-3xl shadow-xl overflow-hidden group border border-gray-100 relative"
                         >
