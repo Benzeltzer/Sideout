@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Testimonials from './components/Testimonials';
 import Team from './components/Team';
 import FAB from './components/FAB';
+import WeeklyClub from './components/WeeklyClub';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Experience />
       <Team />
       <Pricing />
+      <WeeklyClub />
       <Testimonials />
       <Contact />
       <FAB />
