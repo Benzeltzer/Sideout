@@ -10,8 +10,8 @@ const testimonials = [
     },
     {
         quote: "Zero pressure, 100% fun. Even our non-sporty employees loved every minute.",
-        name: "Omer Levi",
-        role: "CEO, StartUp Nation",
+        name: "Gal Ezra",
+        role: "Team Lead, Lusha",
         image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
     },
     {
