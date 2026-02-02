@@ -35,7 +35,9 @@ export default function Contact() {
                     <ul className="space-y-4">
                         <li className="flex items-center gap-4 text-lg hover:text-[#FD5E53] transition-colors cursor-pointer">
                             <Phone className="w-6 h-6" />
-                            <span>054-590-9636</span>
+                            <a href="https://wa.me/972545909636?text=Hi%20Ben!%20I%20saw%20the%20SideOut%20website%20and%20would%20love%20to%20chat%20about%20an%20event." target="_blank" rel="noopener noreferrer">
+                                054-590-9636
+                            </a>
                         </li>
                         <li className="flex items-center gap-4 text-lg hover:text-[#FD5E53] transition-colors cursor-pointer">
                             <Mail className="w-6 h-6" />

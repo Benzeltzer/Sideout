@@ -14,7 +14,7 @@ const packages = [
         cta: "Get Started",
         highlight: false,
         color: "ocean",
-        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I'm%20interested%20in%20the%20Basic%20Sandy%20Start%20package%20for%20my%20team."
+        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I'm%20interested%20in%20the%20Basic%20Sandy%20Start%20package."
     },
     {
         name: "The Coastal Comp",
@@ -45,7 +45,7 @@ const packages = [
         cta: "Book the Ultimate Experience",
         highlight: true,
         color: "gold",
-        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I%20want%20to%20go%20all%20out.%20Please%20send%20me%20info%20about%20the%20VIP%20Ultimate%20Experience%20package."
+        whatsappLink: "https://wa.me/972545909636?text=Hi%20Ben!%20I%20want%20to%20go%20all%20out.%20Please%20send%20me%20info%20about%20the%20VIP%20Ultimate%20Experience."
     }
 ];
 
@@ -81,7 +81,7 @@ export default function Pricing() {
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             whileHover={{ y: -10, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" }}
                             className={`
-                            relative flex flex-col p-8 rounded-2xl transition-all duration-300 overflow-hidden
+                            relative flex flex-col p-8 rounded-2xl transition-all duration-300 overflow-hidden h-full
                             ${pkg.highlight
                                     ? 'bg-ocean text-white z-10'
                                     : 'bg-gray-50 text-gray-800 border border-gray-100'}
@@ -102,7 +102,7 @@ export default function Pricing() {
                                     </div>
                                 )}
 
-                                <div className="mb-0 mt-2">
+                                <div className="mb-0 mt-2 flex-grow">
                                     <h3 className={`text-2xl font-bold mb-2 ${pkg.highlight ? 'text-white' : 'text-ocean'}`}>
                                         {pkg.name}
                                     </h3>
@@ -111,7 +111,7 @@ export default function Pricing() {
                                     </p>
                                 </div>
 
-                                <div className="my-8 space-y-4">
+                                <div className="my-8 space-y-4 flex-grow">
                                     {pkg.features.map((feature, i) => (
                                         <div key={i} className="flex items-start gap-3">
                                             <div className={`mt-0.5 ${pkg.highlight ? 'text-white' : 'text-ocean'}`}>
@@ -124,6 +124,8 @@ export default function Pricing() {
                                     ))}
                                 </div>
 
+                            </div>
+                            <div className="mt-auto z-20 w-full">
                                 <a
                                     href={pkg.whatsappLink}
                                     target="_blank"
