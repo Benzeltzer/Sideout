@@ -40,12 +40,9 @@ export default function Contact() {
                         </li>
                         <li className="flex items-center gap-4 text-lg hover:text-[#FD5E53] transition-colors cursor-pointer">
                             <Mail className="w-6 h-6" />
-                            <span>hello@sideout.com</span>
+                            <span>benzeltzer24@gmail.com</span>
                         </li>
-                        <li className="flex items-center gap-4 text-lg hover:text-[#FD5E53] transition-colors cursor-pointer">
-                            <Instagram className="w-6 h-6" />
-                            <span>@sideout</span>
-                        </li>
+
                     </ul>
                     <a
                         href="https://wa.me/972545909636?text=Hi%20Ben!%20I%20saw%20the%20SideOut%20website%20and%20would%20love%20to%20chat."
