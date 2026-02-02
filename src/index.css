@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+@theme {
+  --color-ocean: #0F4C75;
+  --color-sand: #F5F5DC;
+  --color-sunset: #FD5E53;
+  --font-sans: "Inter", sans-serif;
+
+  --animate-spin-slow: spin 4s linear infinite;
+}
+
+@layer utilities {
+  .text-outline {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+}
