@@ -9,7 +9,7 @@ const testimonials = [
         image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop"
     },
     {
-        quote: "Zero pressure, 100% fun. Even our non-sporty employees loved every minute.",
+        quote: "We’ve tried many corporate activities, but SideOut’s VIP package is on another level. It’s more than just volleyball—it’s about creating lasting memories and a shared spirit. Best team day ever",
         name: "Gal Ezra",
         role: "Team Lead, Lusha",
         image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
