@@ -22,7 +22,7 @@ const testimonials = [
     }
 ];
 
-const companies = ["Emater", "Monday.com", "Fiverr", "Mobileye", "Check Point"];
+const companies = ["Emater", "Lusha", "Fiverr", "Mobileye", "Check Point"];
 
 export default function Testimonials() {
     return (

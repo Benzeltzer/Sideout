@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const companies = [
     { name: "Emater", color: "hover:text-black" },
-    { name: "Monday.com", color: "hover:text-[#F33142]" },
+    { name: "Lusha", color: "hover:text-[#6a35ff]" },
     { name: "Fiverr", color: "hover:text-[#1DBF73]" },
     { name: "Mobileye", color: "hover:text-[#EF2A31]" },
     { name: "Check Point", color: "hover:text-[#EB356D]" }
