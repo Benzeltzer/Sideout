@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const companies = [
-    { name: "Wix", color: "hover:text-black" },
+    { name: "Emater", color: "hover:text-black" },
     { name: "Monday.com", color: "hover:text-[#F33142]" },
     { name: "Fiverr", color: "hover:text-[#1DBF73]" },
     { name: "Mobileye", color: "hover:text-[#EF2A31]" },
