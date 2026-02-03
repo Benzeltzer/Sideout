@@ -5,7 +5,7 @@ const testimonials = [
     {
         quote: "Highly recommended for any team! This was by far the most engaging and bonding activity we’ve ever done as a company. The VIP experience combined fun, teamwork, and unforgettable memories in a way that no office happy hour ever could",
         name: "Ilya Gringlaz",
-        role: "VP R&D, Emater",
+        role: "CEO of Emater",
         image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop"
     },
     {
