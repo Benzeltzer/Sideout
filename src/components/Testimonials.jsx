@@ -3,10 +3,10 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
     {
-        quote: "The best team building we've ever had. It wasn't just volleyball; it was strategic bonding.",
-        name: "Noa Cohen",
-        role: "HR Director, Wix",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
+        quote: "Highly recommended for any team! This was by far the most engaging and bonding activity we’ve ever done as a company. The VIP experience combined fun, teamwork, and unforgettable memories in a way that no office happy hour ever could",
+        name: "Ilya Gringlaz",
+        role: "VP R&D, Emater",
+        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop"
     },
     {
         quote: "Zero pressure, 100% fun. Even our non-sporty employees loved every minute.",
